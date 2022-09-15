@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  postgresjava:
+   image: postgres:latest
+   volumes:
+      - ./data:/var/lib/postgresql
+   environment:
+      - POSTGRES_DB=db
+      - POSTGRES_USER=app
+      - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
+   ports:
+      - '5432:5432'
